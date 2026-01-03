@@ -1,0 +1,64 @@
+.forside_section1 {
+  background-color: var(--farve_1);
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 50px;
+  border-radius: 50px;
+}
+.forside_h1 {
+  margin-bottom: 40px;
+}
+.figurvideo {
+  transform: rotate(-15deg);
+  width: 300px;
+  margin-left: 10px;
+}
+.leopard_stjerne {
+  margin-top: 40px;
+  width: 200px;
+  align-items: center;
+}
+.forside_section2 {
+  display: grid;
+  justify-content: center;
+  row-gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+.forside_section2 > * {
+  width: 250px;
+  height: auto;
+}
+.forside_section2 > * :hover {
+  border: 10px solid var();
+}
+/* Animation */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.forside_section2 > * :hover {
+  animation: pulse 2s ease-in-out infinite;
+}
+@media screen and (min-width: 800px) {
+  .forside_section1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-content: center;
+  }
+  .forside_section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+  }
+}
