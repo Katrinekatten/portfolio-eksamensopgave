@@ -1,0 +1,90 @@
+/* Styling af fonts */
+.h1_ommig {
+  background-color: var(--farve_1);
+  color: var(--farve_2);
+  font-size: var(--headline1-size);
+  font-family: var(--font-family-poppins);
+  font-weight: var(--black);
+  width: fit-content;
+  padding: 50px;
+  border-radius: 15px;
+}
+h2 {
+  font-size: var(--headline2-size);
+  color: var(--farve_1);
+  font-family: var(--font-family-poppins);
+}
+.p_bold {
+  color: var(--farve_1);
+  font-size: var(--p_size);
+  font-weight: var(--bold);
+  font-family: var(--font-family-poppins);
+}
+#årstal_ommig {
+  color: var(--farve_2);
+  background-color: var(--farve_3);
+  border-radius: 30px;
+  border: 1px solid var(--farve_1);
+  width: fit-content;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.figurvideo {
+  transform: rotate(-15deg);
+  width: 300px;
+  margin-left: 10px;
+  padding-left: 100px;
+  margin-top: 150px;
+}
+.polaroid {
+  width: 400px;
+}
+.leopard_stjerne {
+  width: 300px;
+  padding-left: 150px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.ommig_text {
+  background-color: white;
+  color: var(--farve_4);
+  padding: 30px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+.ommig_section3 {
+  margin: 50px;
+}
+/* animation */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.leopard_stjerne {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@media screen and (min-width: 800px) {
+  /* GTRID */
+  .ommig_sectionwrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+  }
+  .uddannelse {
+    margin-left: 20px;
+  }
+  .arbejde {
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+}
