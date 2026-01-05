@@ -1,0 +1,76 @@
+.tema_herobanner {
+  background-color: var(--farve_1);
+}
+.tema_herobanner img {
+  width: 400px;
+}
+.tematitel {
+  font-family: var(--font-family-poppins);
+  font-size: var(--headline1-size);
+  color: var(--farve_2);
+  font-weight: var(--black);
+  word-break: break-word;
+}
+.h3_tema {
+  color: var(--farve_1);
+  font-size: var(headline3-size);
+  font-weight: var(--black);
+  font-family: var(--font-family-poppins);
+}
+.opgavetitel {
+  color: var(--farve_1);
+  font-family: var(--font-family-poppins);
+  font-weight: var(--black);
+  font-size: var(--headline1-size);
+  text-align: center;
+}
+.p_tema {
+  font-family: var(--font-family-poppins);
+  font-size: var(--p-size);
+  color: var(--farve_4);
+  font-weight: var(--medium);
+}
+.text_div {
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  padding: 25px;
+}
+.link_knap {
+  color: var(--farve_2);
+  background-color: var(--farve_3);
+  border-radius: 15px;
+  border: 1px solid var(--farve_1);
+  padding: 5px;
+  width: fit-content;
+  font-family: var(--font-family-poppins);
+  font-weight: var(--bold);
+  font-size: var(--p-size);
+}
+.link_knap:hover {
+  background-color: var(--farve_1);
+}
+a {
+  text-decoration: none;
+}
+.billedtekst {
+  color: var(--farve_4);
+  font-family: var(--font-family-poppins);
+  font-weight: var(--black);
+  font-size: var(--p-size);
+}
+@media screen and (min-width: 800px) {
+  .tema_herobanner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    border-radius: 15px;
+    gap: 75px;
+    padding: 50px;
+  }
+  .tema_grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    gap: 100px;
+  }
+}
