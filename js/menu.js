@@ -1,11 +1,3 @@
-// DARK MODE\\
-// const moon = document.querySelector(".moon");
-
-// moon.addEventListener("click", () => {
-//   document.body.classList.toggle("dark");
-//   document.getElementById("moon_dm").src = "img/illustrationer/sun.svg";
-// });
-
 const moon = document.querySelector(".moon");
 const icon = document.getElementById("moon_dm");
 
@@ -17,4 +9,12 @@ moon.addEventListener("click", () => {
   } else {
     icon.src = "img/illustrationer/moon.svg";
   }
+});
+
+// burgermenu
+const burger = document.querySelector(".burger");
+const navmenuWrapper = document.querySelector(".wrapper_navmenu");
+
+burger.addEventListener("click", () => {
+  navmenuWrapper.classList.toggle("active");
 });

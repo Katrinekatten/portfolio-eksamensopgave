@@ -8,6 +8,10 @@ body {
 /* HEADER START */
 
 header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   background-color: var(--farve_4);
   border-radius: 50px;
   height: 100px;
@@ -19,10 +23,12 @@ header {
   height: 75px;
   width: auto;
   margin-left: 30px;
-  align-self: center;
+  align-self: self-start;
   margin-right: 100px;
 }
-
+#moon {
+  align-self: flex-end;
+}
 /* DESKTOP */
 header {
   display: flex;
@@ -31,7 +37,7 @@ header {
 .navmenu {
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  gap: 50px;
   list-style: none;
 }
 .navmenu a {
@@ -61,6 +67,21 @@ header {
   }
   #moon_dm {
     align-items: center;
+  }
+  .burger {
+    display: block;
+    width: 75px;
+    height: auto;
+  }
+  nav.active .navmenu {
+    display: block;
+    background-color: var(--farve_4);
+    position: absolute;
+    left: 0;
+    top: 84px;
+    width: 100%;
+    z-index: 1;
+    border-radius: 15px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -146,6 +167,12 @@ button {
 }
 main {
   animation: fade-in 2s ease-in;
+}
+@media screen and (min-width: 800px) {
+  main {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
 }
 /* VARIABLER */
 html {
