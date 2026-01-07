@@ -20,7 +20,19 @@
   border-radius: 15px;
   margin-top: 25px;
   margin-bottom: 0;
-  max-width: 500px;
+  width: 500px;
+}
+.img_tema_2 {
+  border: solid 10px var(--farve_3);
+  max-width: 200px;
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+.dobbelt_img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
 }
 /* SKILLS */
 
@@ -86,6 +98,7 @@
   padding: 25px;
   margin-bottom: 100px;
 }
+
 .link_knap {
   color: var(--farve_2);
   background-color: var(--farve_3);
