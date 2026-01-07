@@ -46,20 +46,37 @@ h2 {
   margin-top: 50px;
 }
 .ommig_text {
-  background-color: #f6f6f6;
+  font-family: var(--font-family-poppins);
+  font-size: var(--p-size);
   color: var(--farve_4);
-  padding: 30px;
-  border-radius: 30px;
-  font-size: 20px;
+  font-weight: var(--medium);
   align-self: center;
   display: flex;
-  justify-self: center;
-  max-width: 1200px;
 }
-
+.ommig_section3 {
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 100px;
+}
+/* KONTAKT */
+.kontakt_ommig {
+  display: flex;
+  margin-bottom: 25px;
+  align-self: flex-start;
+  flex-direction: row;
+  column-gap: 10px;
+}
+.kontakt_ommig_text h1 {
+  color: var(--farve_1);
+}
+.telefon_ommig {
+  width: 100px;
+}
 .ommig_section3 h2 {
   text-align: center;
 }
+
 /* animation */
 @keyframes pulse {
   0%,

@@ -10,34 +10,26 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: flex-start;
   background-color: var(--farve_4);
   border-radius: 50px;
-  height: 100px;
+  height: 150px;
   position: sticky;
-  align-items: center;
   z-index: 10;
+  align-items: center;
 }
 .logo_header {
   height: 75px;
   width: auto;
   margin-left: 30px;
-  align-self: self-start;
   margin-right: 100px;
 }
-#moon {
-  align-self: flex-end;
-}
+
 /* DESKTOP */
-header {
-  display: flex;
-  flex-direction: row;
-}
 .navmenu {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 100px;
   list-style: none;
 }
 .navmenu a {
@@ -58,6 +50,7 @@ header {
 }
 .burger {
   display: none;
+  order: -1;
 }
 
 /* MOBILE */
@@ -65,13 +58,14 @@ header {
   .navmenu {
     display: none;
   }
-  #moon_dm {
-    align-items: center;
-  }
+
   .burger {
     display: block;
     width: 75px;
     height: auto;
+  }
+  .logo_header {
+    margin-right: 50px;
   }
   nav.active .navmenu {
     display: block;
@@ -83,11 +77,31 @@ header {
     z-index: 1;
     border-radius: 15px;
   }
+  #moon_dm {
+    margin-left: 50px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .navmenu {
     gap: 10px;
   }
+}
+.header_knapper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+/* DARK MODE */
+#moon_dm {
+  height: 40px;
+  margin-left: 50px;
+}
+button,
+img {
+  background: transparent;
+}
+button {
+  border: none;
 }
 /* HEADER SLUT */
 /* FOOTER START */
@@ -96,15 +110,23 @@ footer {
   border-radius: 30px;
   padding-bottom: 50px;
 }
+.stjerne_footer {
+  height: 250px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 .footer_text1 {
   color: var(--farve_2);
   font-size: 32px;
-  text-align: center;
+  font-family: var(--font-family-poppins);
+  font-weight: var(--black);
+  margin-bottom: 0;
 }
 .footer_text2 {
   color: var(--farve_2);
   font-size: 24px;
-  text-align: center;
+  font-family: var(--font-family-poppins);
+  font-weight: var(--black);
 }
 .telefon_footer {
   width: 100px;
@@ -119,23 +141,9 @@ footer {
 .footer_grid3 {
   display: grid;
   row-gap: 5px;
+  text-align: center;
 }
-/* DARK MODE */
-#moon_dm {
-  height: 40px;
-  margin-left: 100px;
-}
-button,
-img {
-  background: transparent;
-}
-button {
-  border: none;
-}
-.moon:hover {
-  scale: 125%;
-  transition: ease-in-out 1s;
-}
+
 @media screen and (min-width: 768px) {
   .footer_grid {
     display: grid;
@@ -152,6 +160,9 @@ button {
   }
   footer {
     padding-bottom: 0;
+  }
+  .footer_grid3 {
+    text-align: left;
   }
 }
 /* FOOTER SLUT */
@@ -201,7 +212,7 @@ html {
 :root {
   /* FARVER LIGHTMODE */
   --farve_1: #bc2320;
-  --farve_2: #eeeae2;
+  --farve_2: #eae4d8;
   --farve_3: #e98496;
   --farve_4: #20140d;
 }
